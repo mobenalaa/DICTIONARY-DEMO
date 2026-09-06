@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>press to start</h1>
+        <button id="start-button" onclick="handleStart('welcome.mp3')">GO</button>
+    </div>
+    
+    <div id="main-screen">
+        <h2 class="Qeustion">select any Qeustion</h2>
+        <button class="Qeustion" onclick="playOnlySound('hdmi.mp3')">what is hdmi ?</button>
+        <button class="Qeustion" onclick="playOnlySound('easiset language.mp3')"> easiest program language</button>
+        <button class="Qeustion" onclick="playOnlySound('circiut.mp3')">what is a circiut? </button>
+    </div>
+    <div id="image">
+        <img src="image.png">
+    </div>
+    
+    <script>
+        function handleStart(audiofilename) {
+            let audio = new Audio(audiofilename);
+            audio.play().then(() => {
+            document.getElementById('start-screen').style.display='none';
+            document.getElementById('main-screen').style.display='block';})
+        }
+        function playOnlySound(soundfilename) {
+            let sound = new Audio(soundfilename);
+            sound.play()
+        }
+    </script>
+</body>
+</html>

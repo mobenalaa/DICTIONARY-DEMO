@@ -1,0 +1,30 @@
+body{
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+}
+#start-screen{
+    font-family: arial;
+    font-size: medium;
+    font-weight: bold;
+}
+#start-button{
+    border: 8px;
+    border-radius: 12px;
+    background-color: rgb(211, 122, 14);
+    font-family: arial;
+    padding: 8px 12px;
+}
+.Qeustion{
+     border: 8px;
+    border-radius: 12px;
+    background-color: rgb(211, 122, 14);
+    font-family: arial;
+    padding: 8px 12px;
+}
+#image{
+    height: 650px;
+    width: 225px;
+    display: flex;
+    justify-content: right;
+}
